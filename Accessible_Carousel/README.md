@@ -1,0 +1,1 @@
+This example also illustrates how to use the tabs pattern to provide users with a way to skip slides in the sequence by directly choosing which one to view. Navigation among slides is provided by a series of circular buttons that function as tabs and are rendered over the rotating slides. 
