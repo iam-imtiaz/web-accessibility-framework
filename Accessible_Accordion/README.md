@@ -2,7 +2,7 @@ An <b>accordion</b> in web design is a UI (User Interface) component that allows
 
 <p>
 <img width="342" alt="image" src="https://github.com/user-attachments/assets/7d47c45f-a95f-4c5d-9240-0f604af0aff2" hspace="10" >
-<p></p>Accordion Header/Button
+<p>Accordion Header/Button
 Each header/button controls the visibility of its associated panel. Use the following WAI-ARIA properties:
 
 role="button" is implicit in the <button> element.
