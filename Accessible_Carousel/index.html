@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Accessible Carousel with Tabs</title>
+  </head>
+  <body>
+    <section
+      id="myCarousel"
+      class="carousel-tablist"
+      aria-roledescription="carousel"
+      aria-label="Highlighted television shows"
+    >
+      <div class="carousel-inner">
+        <div class="controls">
+          <button class="rotation" type="button">
+            <svg
+              width="42"
+              height="34"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              class="svg-play"
+            >
+              <rect
+                class="background"
+                x="2"
+                y="2"
+                rx="5"
+                ry="5"
+                width="38"
+                height="24"
+              ></rect>
+              <rect
+                class="border"
+                x="4"
+                y="4"
+                rx="5"
+                ry="5"
+                width="34"
+                height="20"
+              ></rect>
+
+              <polygon class="pause" points="17 8 17 20"></polygon>
+
+              <polygon class="pause" points="24 8 24 20"></polygon>
+
+              <polygon class="play" points="15 8 15 20 27 14"></polygon>
+            </svg>
+          </button>
+
+          <div class="tab-wrapper">
+            <div role="tablist" aria-label="Slides">
+              <button
+                id="carousel-tab-1"
+                type="button"
+                role="tab"
+                aria-label="Slide 1"
+                aria-selected="true"
+                aria-controls="carousel-item-1"
+              >
+                <svg
+                  width="34"
+                  height="34"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle class="border" cx="16" cy="15" r="10"></circle>
+                  <circle class="tab-background" cx="16" cy="15" r="8"></circle>
+                  <circle class="tab" cx="16" cy="15" r="6"></circle>
+                </svg>
+              </button>
+              <button
+                id="carousel-tab-2"
+                type="button"
+                role="tab"
+                tabindex="-1"
+                aria-label="Slide 2"
+                aria-selected="false"
+                aria-controls="carousel-item-2"
+              >
+                <svg
+                  width="34"
+                  height="34"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle class="border" cx="16" cy="15" r="10"></circle>
+                  <circle class="tab-background" cx="16" cy="15" r="8"></circle>
+                  <circle class="tab" cx="16" cy="15" r="6"></circle>
+                </svg>
+              </button>
+              <button
+                id="carousel-tab-3"
+                type="button"
+                role="tab"
+                tabindex="-1"
+                aria-label="Slide 3"
+                aria-selected="false"
+                aria-controls="carousel-item-3"
+              >
+                <svg
+                  width="34"
+                  height="34"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle class="border" cx="16" cy="15" r="10"></circle>
+                  <circle class="tab-background" cx="16" cy="15" r="8"></circle>
+                  <circle class="tab" cx="16" cy="15" r="6"></circle>
+                </svg>
+              </button>
+              
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="myCarousel-items"
+          class="carousel-items playing"
+          aria-live="off"
+        >
+          <div
+            class="carousel-item active"
+            id="carousel-item-1"
+            role="tabpanel"
+            aria-roledescription="slide"
+            aria-label="1 of 6"
+          >
+            <div class="carousel-image">
+              <a href="#" id="carousel-image-1">
+                <img src="./res/image1.jpeg" alt="Mountain picture of switzerland " />
+              </a>
+            </div>
+
+            <div class="carousel-caption">
+              <h3>
+                <a href="#"> Travel to switzerland </a>
+              </h3>
+            </div>
+          </div>
+
+          <div
+            class="carousel-item"
+            id="carousel-item-2"
+            role="tabpanel"
+            aria-roledescription="slide"
+            aria-label="2 of 6"
+          >
+            <div class="carousel-image">
+              <a href="#" id="carousel-image-2">
+                <img src="./res/image2.jpeg" alt="Mountain image of England" />
+              </a>
+            </div>
+
+            <div class="carousel-caption">
+              <h3>
+                <a href="#"> Travel to Southwest England</a>
+              </h3>
+            </div>
+          </div>
+
+          <div
+            class="carousel-item"
+            id="carousel-item-3"
+            role="tabpanel"
+            aria-roledescription="slide"
+            aria-label="3 of 6"
+          >
+            <div class="carousel-image">
+              <a href="#!" id="carousel-image-3">
+                <img
+                  src="./res/image3.jpeg"
+                  alt="Mountain image of Island."
+                />
+              </a>
+            </div>
+
+            <div class="carousel-caption">
+              <h3>
+                <a href="#"> Travel to Island </a>
+              </h3>
+
+              <div></div>
+            </div>
+          </div>
+
+          
+         
+
+    </section>
+
+    <div class="col-sm-1"></div>
+
+    <script type="text/javascript" src="scripts.js"></script>
+  </body>
+</html>
